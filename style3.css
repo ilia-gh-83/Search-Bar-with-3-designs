@@ -1,0 +1,137 @@
+:root {
+  --text: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(peakpx2.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.github {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-start;
+  top: 1.5em;
+  left: 1em;
+  color: var(--text);
+  font-size: 15px;
+  z-index: -1;
+}
+
+.gh {
+  display: flex;
+  width: 10em;
+  height: 2.5em;
+  gap: 0.5em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--text);
+  height: 300px;
+  width: 550px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 510px;
+  height: 75px;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+}
+
+.txt1 {
+  font-family: inherit;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px white;
+  width: 250px;
+  height: 40px;
+}
+
+.txt2 {
+  font-family: inherit;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px white;
+  width: 120px;
+  height: 40px;
+}
+
+.button {
+  text-align: center;
+  font-family: inherit;
+  padding-right: 10px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  color: var(--text);
+  padding-left: 10px;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+  width: 100px;
+  height: 40px;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: rgb(0, 255, 255);
+}
+
+.button:focus {
+  color: rgb(0, 255, 255);
+  background-color: white;
+}
+
+#dm {
+  font-size: 14px;
+}
+
+#link {
+  text-decoration: none;
+  color: rgb(0, 255, 255);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 1);
+  transition: 250ms;
+}

@@ -1,0 +1,131 @@
+:root {
+  --color: #e0e0e0;
+  --dark: rgb(183, 182, 182);
+  --text: rgb(68, 67, 67);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.github {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-start;
+  top: 1.5em;
+  left: 1em;
+  color: var(--text);
+  font-size: 15px;
+  z-index: -1;
+}
+
+.gh {
+  display: flex;
+  width: 10em;
+  height: 2.5em;
+  gap: 0.5em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--text);
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--color);
+  width: 550px;
+  height: 75px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+}
+
+.txt1 {
+  font-family: inherit;
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text);
+  padding-left: 10px;
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px white;
+  width: 250px;
+  height: 35px;
+}
+
+.txt2 {
+  font-family: inherit;
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text);
+  padding-left: 10px;
+  box-shadow: inset 5px 5px 10px var(--dark), inset -5px -5px 10px white;
+
+  width: 120px;
+  height: 35px;
+}
+
+.button {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 900;
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text);
+  padding-left: 10px;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+  width: 100px;
+  height: 35px;
+  transition: 250ms ease-in-out;
+}
+
+.button:hover {
+  color: rgba(0, 225, 255, 0.7);
+}
+
+.button:focus {
+  color: rgba(0, 225, 255, 0.7);
+  box-shadow: inset -3px -3px 5px var(--dark), inset 3px 3px 5px var(--dark);
+}
+
+#dm {
+  font-size: 14px;
+}
+
+#link {
+  text-decoration: none;
+  color: rgba(0, 225, 255, 1);
+}
